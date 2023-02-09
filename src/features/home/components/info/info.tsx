@@ -1,3 +1,3 @@
-export default function Info() {
+export function Info() {
   return <span className="message">Calling...</span>;
 }

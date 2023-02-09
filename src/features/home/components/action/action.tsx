@@ -1,4 +1,4 @@
-export default function Action() {
+export function Action() {
   return (
     <>
       <a href="#" className="call">

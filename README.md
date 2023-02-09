@@ -22,3 +22,39 @@ Separa todo en los siguientes componentes:
 - Key
 
 ### Entrega también un listado de responsabilidades:
+
+### INFO:
+
+- Pinta: Estado de la llamada.
+- Recibe: Datos del componente "Actions" (el Call o Hang).
+- Interactúa: Con componente "Actions".
+
+### DISPLAY:
+
+- Pinta: Números clickeados.
+- Recibe: Datos de los números desde componente "Key".
+- Interactúa: Con componente "Actions" para habilitar el "Call".
+
+### ACTIONS:
+
+- Pinta: Los "Action" (Botones de "Call" y "Hang").
+- Recibe: De los componentes "Action" el estado de llamada.
+- Interactúa: Con componentes "Display" and "Action".
+
+### ACTION:
+
+- Pinta: Cada "Action".
+- Recibe: Evento de click del User.
+- Interactúa: Con componentes "Info" y "Display".
+
+### KEYBOARD:
+
+- Pinta: Conjunto de "Key".
+- Recibe: Cada "key".
+- Interactúa: Con "key".
+
+### KEY:
+
+- Pinta: Cada "Key".
+- Recibe: Evento de click del User.
+- Interactúa: Con "Display".

@@ -1,3 +1,6 @@
+import { useDisplay } from "../../hooks/use.display";
+
 export function Display() {
-  return <span className="number">667359961</span>;
+  const { displayNumbers } = useDisplay();
+  return <span className="number">{displayNumbers}</span>;
 }

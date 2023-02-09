@@ -1,62 +1,63 @@
-import { useDisplay } from "../../hooks/use.display";
+import { useContext } from "react";
+import { AppContext } from "../../../../core/context/app.context";
 
 export function Key() {
-  const { handleNumber, handleDelete } = useDisplay();
+  const { handlerNumber, handlerDelete } = useContext(AppContext);
 
   return (
     <ol className="keyboard">
       <li>
-        <button className="key" onClick={() => handleNumber("1")}>
+        <button className="key" onClick={() => handlerNumber("1")}>
           1
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("2")}>
+        <button className="key" onClick={() => handlerNumber("2")}>
           2
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("3")}>
+        <button className="key" onClick={() => handlerNumber("3")}>
           3
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("4")}>
+        <button className="key" onClick={() => handlerNumber("4")}>
           4
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("5")}>
+        <button className="key" onClick={() => handlerNumber("5")}>
           5
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("6")}>
+        <button className="key" onClick={() => handlerNumber("6")}>
           6
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("7")}>
+        <button className="key" onClick={() => handlerNumber("7")}>
           7
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("8")}>
+        <button className="key" onClick={() => handlerNumber("8")}>
           8
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("9")}>
+        <button className="key" onClick={() => handlerNumber("9")}>
           9
         </button>
       </li>
       <li>
-        <button className="key" onClick={() => handleNumber("0")}>
+        <button className="key" onClick={() => handlerNumber("0")}>
           0
         </button>
       </li>
       <li>
-        <button className="key big" onClick={() => handleDelete()}>
+        <button className="key big" onClick={() => handlerDelete()}>
           delete
         </button>
       </li>
